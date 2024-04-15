@@ -11,7 +11,7 @@ const result = JSON.parse(a);
 //a.Countries in Asia region
 console.log("a.Countries in Asia region");
 result.filter((item)=>{
-   if(item.region==="Asia"){
+   if(item.region==="Asia" || item.continents[0]=== "Asia"){
     console.log(item.name.common)
    }
 })
